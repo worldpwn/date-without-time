@@ -1,9 +1,0 @@
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\bin\Debug\netstandard2.0\ValueObjects.deps.json
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\bin\Debug\netstandard2.0\ValueObjects.dll
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\bin\Debug\netstandard2.0\ValueObjects.pdb
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\obj\Debug\netstandard2.0\ValueObjects.csprojAssemblyReference.cache
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\obj\Debug\netstandard2.0\ValueObjects.AssemblyInfoInputs.cache
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\obj\Debug\netstandard2.0\ValueObjects.AssemblyInfo.cs
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\obj\Debug\netstandard2.0\ValueObjects.csproj.CoreCompileInputs.cache
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\obj\Debug\netstandard2.0\ValueObjects.dll
-C:\Users\world\Documents\date-without-time\DateWihtoutTime\obj\Debug\netstandard2.0\ValueObjects.pdb
