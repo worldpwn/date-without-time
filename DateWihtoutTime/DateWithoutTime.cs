@@ -6,9 +6,9 @@ namespace ValueObjects
 {
   public class DateWithoutTime : ValueObject, IComparable<DateWithoutTime>
   {
-    public int Day { get; private set; }
-    public int Month { get; private set; }
-    public int Year { get; private set; }
+    public readonly int Day;
+    public readonly int Month;
+    public readonly int Year;
 
     private static readonly string _stringSuffix = "DateWithoutTime";
     private static readonly string _stringFormat = $"dd/MM/yyyy/{_stringSuffix}";
@@ -24,21 +24,29 @@ namespace ValueObjects
 
     public DateWithoutTime(int day, int month, int year)
     {
-      SetValues(day, month, year);
+      ValidateValues(day, month, year);
+      Day = day;
+      Month = month;
+      Year = year;
     }
 
     public DateWithoutTime(DateWithoutTime dateWithoutTime)
     {
-      SetValues(dateWithoutTime.Day, dateWithoutTime.Month, dateWithoutTime.Year);
+       ValidateValues(dateWithoutTime.Day, dateWithoutTime.Month, dateWithoutTime.Year);
+       Day = dateWithoutTime.Day;
+       Month = dateWithoutTime.Month;
+       Year = dateWithoutTime.Year;
     }
 
     public DateWithoutTime(DateTime datetime)
     {
-      SetValues(datetime.Day, datetime.Month, datetime.Year);
+      ValidateValues(datetime.Day, datetime.Month, datetime.Year);
+      Day = datetime.Day;
+      Month = datetime.Month;
+      Year = datetime.Year;
     }
 
-
-    private void SetValues(int day, int month, int year)
+    private void ValidateValues(int day, int month, int year)
     {
       // Year validation
       if (year < 1)
@@ -56,10 +64,7 @@ namespace ValueObjects
       int daysInMonth = DateTime.DaysInMonth(year, month);
       if (day > daysInMonth)
         throw new ArgumentOutOfRangeException(nameof(day), day, $"In {new DateTime(year, month, 1):MMMM} of {year} just {daysInMonth} days, but there was an attempt to create with {day} day");
-
-      Day = day;
-      Month = month;
-      Year = year;
+     
     }
 
     public DateWithoutTime AddMonths(int months)
