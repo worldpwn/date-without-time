@@ -16,10 +16,11 @@ namespace ValueObjects
     public DateWithoutTime(string str)
     {
       DateWithoutTime dateWithoutTime = DateWithoutTime.Parse(str);
-
-      this.Day = dateWithoutTime.Day;
-      this.Month = dateWithoutTime.Month;
-      this.Year = dateWithoutTime.Year;
+      ValidateValues(dateWithoutTime.Day, dateWithoutTime.Month, dateWithoutTime.Year);
+      
+      Day = dateWithoutTime.Day;
+      Month = dateWithoutTime.Month;
+      Year = dateWithoutTime.Year;
     }
 
     public DateWithoutTime(int day, int month, int year)
@@ -222,7 +223,7 @@ namespace ValueObjects
     }
 
     /// <summary>
-    /// Will convert to our special format. Example: 01/03/2000/LeaseProDateWithoutTime.
+    /// Will convert to our special format. Example: 01/03/2000/DateWithoutTime.
     /// </summary>
     public override string ToString()
     {
