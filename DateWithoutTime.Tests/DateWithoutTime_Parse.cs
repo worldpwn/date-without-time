@@ -32,7 +32,7 @@ namespace ValueObjects.Tests
     [InlineData("01/01/2019/вфыro")]
     [InlineData("01/01/2019/DateWithTime")]
     [InlineData("01/01/2019/LeoDateWithoutTim")]
-    [InlineData("01/01/2019/LEASEPRODATEWITHOUTTIME")]
+    [InlineData("01/01/2019/LEASDATEWITHOUTTIME")]
     [InlineData("01/01/2019/leahouttime")]
     public void IncorrectSuffix_InStringDate_Should_ThrowException(string wrongSuffixString)
     {
