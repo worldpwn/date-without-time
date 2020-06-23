@@ -1,0 +1,4 @@
+C:\Users\world\Documents\date-without-time\DateWithoutTime.Tests\obj\Debug\netcoreapp3.1\DateWithoutTime.Tests.csprojAssemblyReference.cache
+C:\Users\world\Documents\date-without-time\DateWithoutTime.Tests\obj\Debug\netcoreapp3.1\DateWithoutTime.Tests.AssemblyInfoInputs.cache
+C:\Users\world\Documents\date-without-time\DateWithoutTime.Tests\obj\Debug\netcoreapp3.1\DateWithoutTime.Tests.AssemblyInfo.cs
+C:\Users\world\Documents\date-without-time\DateWithoutTime.Tests\obj\Debug\netcoreapp3.1\DateWithoutTime.Tests.csproj.CoreCompileInputs.cache
